@@ -178,7 +178,7 @@ class Mdl_Setup extends MY_Model {
 		$this->form_validation->set_rules('hostname', $this->lang->line('database_server'), 'required');
 		$this->form_validation->set_rules('database', $this->lang->line('database_name'), 'required');
 		$this->form_validation->set_rules('username', $this->lang->line('database_username'), 'required');
-		$this->form_validation->set_rules('password', $this->lang->line('database_password'), 'required');
+		$this->form_validation->set_rules('password', $this->lang->line('database_password'));
 
 		return parent::validate();
 
@@ -686,7 +686,7 @@ class Mdl_Setup extends MY_Model {
 		}
 
 		else {
-			
+
 			$return[] = anchor('sessions/login', $this->lang->line('log_in'));
 
 			$return[] = $this->lang->line('install_already_current');
@@ -1183,7 +1183,7 @@ class Mdl_Setup extends MY_Model {
 		return TRUE;
 
 	}
-	
+
 	function u0102() {
 
 		$queries = array(
