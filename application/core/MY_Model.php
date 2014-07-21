@@ -68,9 +68,12 @@ class MY_Model extends CI_Model {
 
 	public $form_values = array();
 
+	public $settings;
+
 	public function __construct() {
 
 		parent::__construct();
+		$this->settings = new stdClass();
 
 	}
 
@@ -296,7 +299,7 @@ class MY_Model extends CI_Model {
 			if (is_array($params['like'])) {
 
 				foreach ($params['like'] as $key=>$value) {
-					
+
 					$this->db->where('(' . $key . " LIKE " . $this->db->escape('%' . $value . '%') . " or " . $key . " LIKE " . $this->db->escape($value . '%') . ")");
 
 				}

@@ -2,8 +2,6 @@
 
 class Mdl_MCB_Client_Data extends MY_Model {
 
-    public $settings;
-
 	public function get($client_id, $key) {
 
 		$this->db->select('mcb_client_value');

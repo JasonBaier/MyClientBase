@@ -2,14 +2,6 @@
 
 class Mdl_MCB_Data extends MY_Model {
 
-	public $settings;
-
-	function __construct()
-	{
-		parent::__construct();
-		$this->settings = new stdClass();
-	}
-
 	public function get($key) {
 
 		$this->db->select('mcb_value');

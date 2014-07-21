@@ -2,8 +2,6 @@
 
 class Mdl_MCB_Userdata extends MY_Model {
 
-	public $settings;
-
 	public function get($user_id, $key) {
 
 		$this->db->select('mcb_userdata_value');
