@@ -1,7 +1,4 @@
-﻿/application/helpers/mpdf/
-/application/config/database.php
-system/config/database.php
-*/logs/log-*.php
-*/logs/!index.html
-*/cache/*
-*/cache/!index.html
+﻿application/helpers/dompdf
+application/config/database.php
+application/cache
+application/logs
