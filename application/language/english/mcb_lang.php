@@ -36,6 +36,7 @@ $lang['change_password'] = 'Change Password';
 $lang['changing_template_name'] = 'Changing an existing template name will not rename the template. Instead it will create a copy of the template.';
 $lang['check'] = 'Check';
 $lang['choose_an_invoice'] = 'Choose an Invoice';
+$lang['ci_version'] = 'CodeIgniter Version';
 $lang['city'] = 'City';
 $lang['client'] = 'Client';
 $lang['client_delete_warning'] = 'Deleting this client record will also delete all associated invoices and payments. Are you sure you want to delete this client and all associated records?';

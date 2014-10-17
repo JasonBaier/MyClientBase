@@ -41,6 +41,10 @@
 							<dd><?php echo $this->mdl_mcb_data->setting('version'); ?></dd>
 						</dl>
 						<dl>
+							<dt><?php echo $this->lang->line('ci_version'); ?>: </dt>
+							<dd><?php echo CI_VERSION; ?></dd>
+						</dl>
+						<dl>
 							<dt><?php echo $this->lang->line('database_backup'); ?>: </dt>
 							<dd><input type="submit" name="btn_backup" value="<?php echo $this->lang->line('database_backup'); ?>" /></dd>
 						</dl>
